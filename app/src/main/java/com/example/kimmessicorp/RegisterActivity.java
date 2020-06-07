@@ -40,8 +40,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                 //EditText에 현재 입력되어 있는 값을 get 해옴.
                 String userID = et_id.getText().toString();
-                String userPass = et_id.getText().toString();
-                String userName = et_id.getText().toString();
+                String userPass = et_pass.getText().toString();
+                String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
