@@ -57,7 +57,8 @@ kimmessi.dothome.co.kr 이게 서버 호스팅 사이트이고,
 
 DB 설계는 
 
-http://kimmessi.dothome.co.kr/myadmin에서 DB를 구현합니다. 
+http://kimmessi.dothome.co.kr/myadmin 에서 DB를 구현합니다. 
+
 비밀번호는 s01020304s! 입니다.
 
 
