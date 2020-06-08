@@ -34,4 +34,16 @@ ReadMe에 팀 소개와 프로젝트 내용들을 작성함.
 
 최종 오류 수정
 
+6월 8일
+
+listview 생성
+
+ViewActivity.java 생성(MainActivity에서 list 클릭 시 게시물로 화면 전환)-화면전환 및 페이지 내용 미완
+
+새 게시글 작성 "+" 버튼 생성
+
+토스트 메세지 생성
+
+새 게시글 작성으로 화면전환 intent 추가(writeActivity.java 필요)
+
 
