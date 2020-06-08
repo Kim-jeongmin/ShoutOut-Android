@@ -1,4 +1,4 @@
-package com.example.board4;
+package com.example.kimmessicorp;
 
 import android.os.Bundle;
 
