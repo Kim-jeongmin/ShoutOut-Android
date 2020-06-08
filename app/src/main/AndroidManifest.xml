@@ -23,6 +23,9 @@
         <activity android:name=".MainActivity">
 
         </activity>
+        <activity android:name=".ViewActivity"/>
+        //나중에 WriteActivity 추가
+        <activity android:name=".WriteActivity"/>
     </application>
 
 </manifest>
