@@ -52,4 +52,12 @@ list 클릭 시 게시물로 화면 전환 intent 추가
 
 WriteActivity에 "저장" 버튼, editText 추가
 
+6월 9일 
+
+슬라이드로 열고 닫고 하는 메뉴 생성
+
+비밀번호 textview 삭제
+
+메뉴 닫기 버튼 및 메뉴 열기 버튼 추가
+
 
