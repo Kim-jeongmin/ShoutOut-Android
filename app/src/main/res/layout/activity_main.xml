@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
     tools:context=".MainActivity">
 
     <TextView
@@ -50,18 +51,30 @@
 
     <Button
         android:id="@+id/btn_write"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:text="+"
-        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:text="+"
+        android:textSize="30dp" />
 
     <ListView
         android:id="@+id/listview_posts"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="메뉴" />
+    </LinearLayout>
+    <include layout = "@layout/activity_drawer"/>
 
 
 </RelativeLayout>
