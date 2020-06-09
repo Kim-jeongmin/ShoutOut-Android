@@ -20,7 +20,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tv_id,tv_pass;
+    private TextView tv_id;
     private DrawerLayout drawerLayout;
     private View drawerView;
 
@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tv_id = findViewById(R.id.tv_id);
-        tv_pass = findViewById(R.id.tv_pass);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawerView = (View)findViewById(R.id.drawer);
 
@@ -73,10 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
-        String userPass = intent.getStringExtra("userPass");
 
         tv_id.setText(userID);
-        tv_pass.setText(userPass);
 
 
         //xml에서 담아온 listview 정의
