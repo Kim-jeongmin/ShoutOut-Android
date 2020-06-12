@@ -14,7 +14,7 @@
         <Button
             android:id="@+id/btn_write"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:text="+"
@@ -30,7 +30,7 @@
         <Button
             android:id="@+id/btn_open"
             android:layout_width="107dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:text="메뉴" />
