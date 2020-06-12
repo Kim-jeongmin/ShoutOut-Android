@@ -68,4 +68,8 @@ WriteActivity에 "저장" 버튼, editText 추가
 
 전체적인 UI를 개선
 
+6월 12일
+
+기본적인 메뉴 기능 구현완료
+
 
