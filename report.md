@@ -88,6 +88,13 @@ BBSWrite라는 게시글 작성시 게시글 제목, 내용, ID 를 넘겨받는
 
 BBSWrite DB 구축
 
+![BBSWrite](https://user-images.githubusercontent.com/54140431/85195006-039eb900-b30a-11ea-9d65-5f50117e8a3a.png)
+
+![Screenshot_1592633875](https://user-images.githubusercontent.com/54140431/85195036-3a74cf00-b30a-11ea-95f9-3c9bf39f8542.png)
+
+![BBSWriteDB](https://user-images.githubusercontent.com/54140431/85195039-406ab000-b30a-11ea-8647-79b8a0774e7b.png)
+
+
 6월 9일 
 
 슬라이드로 열고 닫고 하는 메뉴 생성
