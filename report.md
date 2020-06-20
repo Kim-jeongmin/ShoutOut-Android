@@ -28,6 +28,8 @@ ReadMe에 팀 소개와 프로젝트 내용들을 작성함.
 
 DB 로그인 회원가입 스키마 설계 완료
 
+로그인, 회원가입 php 코드 
+
 서버에 로그인, 회원가입 요청하는 기능 추가
 
 회원가입 기능 완성
@@ -45,6 +47,8 @@ DB 로그인 회원가입 스키마 설계 완료
 
 <img src="https://user-images.githubusercontent.com/55871387/85189726-54071e00-b2ec-11ea-9964-8ba7ae761be3.jpg"  width="700" height="300">
 
+![서버캡쳐본2](https://user-images.githubusercontent.com/55871387/85190420-44d79e80-b2f3-11ea-9fe1-c4d1abe5b59f.jpg)
+![서버캡쳐본1](https://user-images.githubusercontent.com/55871387/85190422-4608cb80-b2f3-11ea-8035-5389e4ed3025.jpg)
 
 
 6월 8일
