@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String userID = intent.getStringExtra("userID");
+        final String userID = intent.getStringExtra("userID");
 
         tv_id.setText(userID);
 
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 //버튼을 눌렀을 때 화면 전환 -> 작성페이지로
                 //fill blank -> Activity name.class
                 Intent intent = new Intent(MainActivity.this, WriteActivity.class);
+                intent.putExtra("userID",userID);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"새 게시글 작성",Toast.LENGTH_SHORT).show();
             }

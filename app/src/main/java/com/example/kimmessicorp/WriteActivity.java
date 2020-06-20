@@ -23,6 +23,8 @@ public class WriteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
+        Intent intent = getIntent();
+        final String userID = intent.getExtras().getString("userID");
 
         //버튼과 EditText의 키 값 배정
         title = findViewById(R.id.title);
@@ -61,7 +63,6 @@ public class WriteActivity extends AppCompatActivity {
                         }
                     }
                 };
-
             }
         });
     }
