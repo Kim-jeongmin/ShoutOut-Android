@@ -131,4 +131,4 @@ acitivity_information, InformationActivity 구현 완료 (기본만 함)
 
 로그인 할 때 회원의 모든 정보를 가져온 후에 회원 정보 판에다 뿌림.
 
-<img src="https://user-images.githubusercontent.com/55871387/85203349-1df78780-b348-11ea-8c67-edb365d27d5c"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55871387/85203406-978f7580-b348-11ea-9f98-00fb1f112b39.jpg"  width="300" height="600">
