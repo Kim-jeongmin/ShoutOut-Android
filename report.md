@@ -69,15 +69,16 @@ list 클릭 시 게시물로 화면 전환 intent 추가
 
 WriteActivity에 "저장" 버튼, editText 추가
 
-<img src="https://user-images.githubusercontent.com/55236612/85190580-9fbdc580-b2f4-11ea-88ff-6f4b010dd3c2.png"  width="300" height="600>
+
+<img src="https://user-images.githubusercontent.com/55236612/85190580-9fbdc580-b2f4-11ea-88ff-6f4b010dd3c2.png"  width="400" height="600>
                                                                                                                                      
-<img src="https://user-images.githubusercontent.com/55236612/85190589-b2d09580-b2f4-11ea-9d46-4a8fb2eaa514.png"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55236612/85190589-b2d09580-b2f4-11ea-9d46-4a8fb2eaa514.png"  width="400" height="600">
 
-<img src="https://user-images.githubusercontent.com/55236612/85190605-d5fb4500-b2f4-11ea-8586-7c74267f2314.png"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55236612/85190605-d5fb4500-b2f4-11ea-8586-7c74267f2314.png"  width="400" height="600">
 
-<img src="https://user-images.githubusercontent.com/55236612/85190612-ee6b5f80-b2f4-11ea-9a0c-49b2c63e6ef4.png"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55236612/85190612-ee6b5f80-b2f4-11ea-9a0c-49b2c63e6ef4.png"  width="400" height="600">
 
-<img src="https://user-images.githubusercontent.com/55236612/85190619-00e59900-b2f5-11ea-8830-3c5ecc33d1c2.png"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55236612/85190619-00e59900-b2f5-11ea-8830-3c5ecc33d1c2.png"  width="400" height="600">
 
 <img src="https://user-images.githubusercontent.com/55871387/85189835-65045f00-b2ed-11ea-8f60-cb00800c0b61.jpg"  width="300" height="600">
 
