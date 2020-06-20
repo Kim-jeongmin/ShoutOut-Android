@@ -9,7 +9,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -63,6 +65,11 @@ public class WriteActivity extends AppCompatActivity {
                         }
                     }
                 };
+
+                //서버로 요청
+                writeRequest writeRequest = new writeRequest(userID, newtitle, newcontent, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(WriteActivity.this);
+                queue.add(writeRequest);
             }
         });
     }
