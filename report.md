@@ -90,6 +90,7 @@ BBSWrite DB 구축
 
 <img src= "https://user-images.githubusercontent.com/54140431/85195006-039eb900-b30a-11ea-9d65-5f50117e8a3a.png">
 
+![DB](https://user-images.githubusercontent.com/54140431/85196491-837e5080-b315-11ea-938d-6c22a83204ee.png)
 
 6월 9일 
 
