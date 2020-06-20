@@ -53,7 +53,6 @@ public class WriteActivity extends AppCompatActivity {
                                 // 작성 성공
                                 Toast.makeText(getApplicationContext(), "작성되었습니다!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(WriteActivity.this, MainActivity.class);
-                                //나중에 loginActivity 를 게시판 메인화면으로 바꾸기
                                 startActivity(intent);
                             } else {
                                 // 작성 실패
