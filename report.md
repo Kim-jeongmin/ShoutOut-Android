@@ -90,10 +90,6 @@ BBSWrite DB 구축
 
 <img src= "https://user-images.githubusercontent.com/54140431/85195006-039eb900-b30a-11ea-9d65-5f50117e8a3a.png">
 
-<img src= "https://user-images.githubusercontent.com/54140431/85195036-3a74cf00-b30a-11ea-95f9-3c9bf39f8542.png"  width="300" height="600">
-
-![BBSWriteDB](https://user-images.githubusercontent.com/54140431/85195039-406ab000-b30a-11ea-8647-79b8a0774e7b.png)
-
 
 6월 9일 
 
@@ -125,3 +121,7 @@ Activity_write 구현완료 - TITLE과 CONTENT라는 EditText 생성, 게시물 
 MainActivity에서 userID를 WriteActivity로 넘기고 WriteActiviry에서 넘겨받은 userID 를 게시물 작성 시 사용할 수 있도록 함
 
 WriteActivity 구현완료 - add_button을 누르면 입력받은 TITLE과 CONTENT를 BBSWrite라는 게시물 DB로 넘겨줌
+
+<img src= "https://user-images.githubusercontent.com/54140431/85195036-3a74cf00-b30a-11ea-95f9-3c9bf39f8542.png"  width="300" height="600">
+
+![BBSWriteDB](https://user-images.githubusercontent.com/54140431/85195039-406ab000-b30a-11ea-8647-79b8a0774e7b.png)
