@@ -38,13 +38,13 @@ DB 로그인 회원가입 스키마 설계 완료
 
 최종 오류 수정
 
-![앱 회원가입화면](https://user-images.githubusercontent.com/55871387/85189698-10acaf80-b2ec-11ea-9d3f-ae500ec70274.jpg)
 
+<img src="https://user-images.githubusercontent.com/55871387/85189698-10acaf80-b2ec-11ea-9d3f-ae500ec70274.jpg"  width="300" height="600">
 
-![앱로그인 화면](https://user-images.githubusercontent.com/55871387/85189748-87e24380-b2ec-11ea-944b-22ea566a28af.jpg)
+<img src="https://user-images.githubusercontent.com/55871387/85189748-87e24380-b2ec-11ea-944b-22ea566a28af.jpg"  width="300" height="600">
 
+<img src="https://user-images.githubusercontent.com/55871387/85189726-54071e00-b2ec-11ea-9964-8ba7ae761be3.jpg"  width="700" height="300">
 
-![로그인 회원가입 스키마 설계](https://user-images.githubusercontent.com/55871387/85189726-54071e00-b2ec-11ea-9964-8ba7ae761be3.jpg)
 
 
 6월 8일
@@ -65,7 +65,7 @@ list 클릭 시 게시물로 화면 전환 intent 추가
 
 WriteActivity에 "저장" 버튼, editText 추가
 
-![앱게시글작성화면](https://user-images.githubusercontent.com/55871387/85189835-65045f00-b2ed-11ea-8f60-cb00800c0b61.jpg)
+<img src="https://user-images.githubusercontent.com/55871387/85189835-65045f00-b2ed-11ea-8f60-cb00800c0b61.jpg"  width="300" height="600">
 
 6월 9일 
 
@@ -87,8 +87,8 @@ WriteActivity에 "저장" 버튼, editText 추가
 
 기본적인 메뉴 기능 구현완료
 
-![앱 메뉴 화면](https://user-images.githubusercontent.com/55871387/85189792-fd4e1400-b2ec-11ea-82ee-553f3a5535d1.jpg)
+<img src="https://user-images.githubusercontent.com/55871387/85189792-fd4e1400-b2ec-11ea-82ee-553f3a5535d1.jpg"  width="300" height="600">
 
-![앱메인화면1](https://user-images.githubusercontent.com/55871387/85189839-6c2b6d00-b2ed-11ea-846c-56f03cb35e3d.jpg)
+<img src="https://user-images.githubusercontent.com/55871387/85189839-6c2b6d00-b2ed-11ea-846c-56f03cb35e3d.jpg"  width="300" height="600">
 
 
