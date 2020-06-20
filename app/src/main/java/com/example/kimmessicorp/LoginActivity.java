@@ -49,7 +49,6 @@ public class LoginActivity extends AppCompatActivity {
                 String userID = et_id.getText().toString();
                 String userPass = et_pass.getText().toString();
 
-
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -60,10 +59,14 @@ public class LoginActivity extends AppCompatActivity {
                                 // 로그인 성공
                                 String userID = jsonObject.getString("userID");
                                 String userPass = jsonObject.getString("userPassword");
+                                String userName = jsonObject.getString("userName");
+                                String userAge = jsonObject.getString("userAge");
                                 Toast.makeText(getApplicationContext(),"로그인이 성공적으로 이뤄졌습니다!",Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 intent.putExtra("userID",userID);
                                 intent.putExtra("userPass",userPass);
+                                intent.putExtra("userName",userName);
+                                intent.putExtra("userAge",userAge);
                                 startActivity(intent);
                             }
                             else {

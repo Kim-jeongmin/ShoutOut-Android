@@ -126,3 +126,7 @@ WriteActivity 구현완료 - add_button을 누르면 입력받은 TITLE과 CONTE
 <img src= "https://user-images.githubusercontent.com/54140431/85195036-3a74cf00-b30a-11ea-95f9-3c9bf39f8542.png"  width="300" height="600">
 
 ![BBSWriteDB](https://user-images.githubusercontent.com/54140431/85195039-406ab000-b30a-11ea-8647-79b8a0774e7b.png)
+
+acitivity_information, InformationActivity 구현 완료
+
+로그인 할 때 회원의 모든 정보를 가져온 후에 회원 정보 판에다 뿌림.

@@ -43,6 +43,28 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawerView = (View)findViewById(R.id.drawer);
 
+        Intent intent = getIntent();
+        final String userID = intent.getStringExtra("userID");
+        final String userPass = intent.getStringExtra("userPass");
+        final String userName = intent.getStringExtra("userName");
+        final String userAge = intent.getStringExtra("userAge");
+
+        tv_id.setText(userID);
+
+        Button btn_infor = (Button)findViewById(R.id.btn_infor);
+
+        btn_infor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,InformationActivity.class);
+                intent.putExtra("userID",userID);
+                intent.putExtra("userPass",userPass);
+                intent.putExtra("userName",userName);
+                intent.putExtra("userAge",userAge);
+                startActivity(intent);
+            }
+        });
+
         Button btn_open = (Button)findViewById(R.id.btn_open);
 
         btn_open.setOnClickListener(new View.OnClickListener() { // 메뉴 열기 버튼 누를 때 열기
@@ -68,12 +90,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-        Intent intent = getIntent();
-        final String userID = intent.getStringExtra("userID");
-
-        tv_id.setText(userID);
 
 
         //xml에서 담아온 listview 정의
