@@ -82,6 +82,12 @@ WriteActivity에 "저장" 버튼, editText 추가
 
 <img src="https://user-images.githubusercontent.com/55871387/85189835-65045f00-b2ed-11ea-8f60-cb00800c0b61.jpg"  width="300" height="600">
 
+WriteActivity 파일 생성
+
+BBSWrite라는 게시글 작성시 게시글 제목, 내용, ID 를 넘겨받는 php 파일 생성
+
+BBSWrite DB 구축
+
 6월 9일 
 
 슬라이드로 열고 닫고 하는 메뉴 생성
