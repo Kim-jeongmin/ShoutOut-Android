@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,6 +18,19 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         //xml에서 담아온 listview 정의
         ListView listView = (ListView) findViewById(R.id.listview_posts);
         //adapter 선언: 리스트 방식, LIST_POST의 정보를 adapter에
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, data);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
         //listview와 adapter를 연결
         listView.setAdapter(adapter);
 
@@ -135,6 +151,54 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+        public class Getlistdata extends AsyncTask<String, Void, String[]> {
+
+            private final String LOG_TAG = Getlistdata.class.getSimpleName();
+
+            private  String[] getListDataFromJson(String dataJsonStr)
+                throws JSONException{
+
+                final String STR_NUM = "BSS_NO";
+                final String STR_ID = "userID";
+                final String STR_TITLE = "TITLE";
+                final String STR_CON = "CONTENT";
+                final String STR_DATE = "REG_DATE";
+
+                JSONObject dataJson = new JSONObject(dataJsonStr);
+                JSONArray dataArray = dataJson.getJSONArray("BSSList");
+
+                String[] resultStrs = new String[dataArray.length()];
+                for(int i=0;i< dataArray.length(); i++){
+                    String num;
+                    String ID;
+                    String description;
+                    String title;
+                    String date;
+
+                    JSONObject data = dataArray.getJSONObject(i);
+
+                    num = data.getString(STR_NUM);
+                    ID = data.getString(STR_ID);
+                    description = data.getString(STR_CON);
+                    title = data.getString(STR_TITLE);
+                    date = data.getString(STR_DATE);
+
+                    resultStrs[i] = num + "-" + ID + "-" + description + "-" + title + "-" + date;
+                 }
+
+                for (String s: resultStrs) {
+                    Log.v(LOG_TAG, "data entry" + s);
+                }
+                return resultStrs;
+            }
+
+
+            @Override
+            protected String[] doInBackground(String... strings) {
+                return new String[0];
+            }
+        }
+
     DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {
         @Override
         public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
@@ -156,4 +220,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+
 }
