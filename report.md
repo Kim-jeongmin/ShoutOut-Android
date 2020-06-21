@@ -146,3 +146,10 @@ introActivity 를 만들어 앱 시작할때 앱 로고와 아이콘을 보여�
 background color변경, 앱 label 변경
 
 <img src = "https://user-images.githubusercontent.com/54140431/85226142-e6084700-b410-11ea-9393-dc6675f3ebd2.png" width="300" height="600">
+
+BOARD 테이블의 서버 코드인 BBSList코드 수정
+
+JSON 코드를 읽어서 리스트뷰에 뿌리는 함수 구현
+
+![image](https://user-images.githubusercontent.com/55871387/85227837-b8c09680-b41a-11ea-9569-e632673b66b5.png)
+
