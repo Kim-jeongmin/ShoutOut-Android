@@ -6,10 +6,6 @@ android:layout_width="match_parent"
 android:background="#3203A9F4"
 tools:context=".ViewActivity">
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--    </androidx.recyclerview.widget.RecyclerView>-->
 
     <TextView
         android:id="@+id/titleview"
@@ -22,16 +18,16 @@ tools:context=".ViewActivity">
         android:text="Title"
         android:textSize="40dp"></TextView>
 
-<TextView
-    android:id="@+id/writerview"
-    android:layout_width="189dp"
-    android:layout_height="78dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="100dp"
-    android:layout_marginRight="200dp"
-    android:layout_marginBottom="580dp"
-    android:text="Writer"
-    android:textSize="20dp"></TextView>
+    <TextView
+        android:id="@+id/writerview"
+        android:layout_width="189dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="580dp"
+        android:text="Writer"
+        android:textSize="20dp"></TextView>
 
     <TextView
         android:id="@+id/dateview"
@@ -44,16 +40,16 @@ tools:context=".ViewActivity">
         android:text="Date"
         android:textSize="20dp"></TextView>
 
-<TextView
-    android:id="@+id/contentview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="150dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="10dp"
-    android:text="Contents"
-    android:textSize="20dp">
-</TextView>
+    <TextView
+        android:id="@+id/contentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Contents"
+        android:textSize="20dp">
+    </TextView>
 
 </RelativeLayout>
