@@ -142,4 +142,7 @@ activity_information에 textview를 추가해서 이 textview가 어떤 정보�
 
 <img src="https://user-images.githubusercontent.com/55871387/85221780-b0079a80-b3f1-11ea-8f71-56df5cab288d.jpg"  width="300" height="600">
 
+introActivity 를 만들어 앱 시작할때 앱 로고와 아이콘을 보여주는 화면을 만듦.
+background color변경, 앱 label 변경
 
+<img src = "https://user-images.githubusercontent.com/54140431/85226142-e6084700-b410-11ea-9393-dc6675f3ebd2.png" width="300" height="600">
