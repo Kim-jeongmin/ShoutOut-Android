@@ -11,20 +11,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_write"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:text="+"
-            android:textSize="30dp" />
-
+<!--        <Button-->
+<!--            android:id="@+id/btn_write"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:text="+"-->
+<!--            android:textSize="20dp" />-->
 
         <ListView
             android:id="@+id/listview_posts"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#3203A9F4">
+
         </ListView>
 
         <Button
@@ -33,7 +40,19 @@
             android:layout_height="50dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:text="메뉴" />
+            android:text="메뉴"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#0003A9F4"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/plus" />
 
 
     </RelativeLayout>

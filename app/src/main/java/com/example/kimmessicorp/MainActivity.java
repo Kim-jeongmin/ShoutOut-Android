@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv_id.setText(userID);
 
-        Button btn_infor = (Button)findViewById(R.id.btn_infor);
+            Button btn_infor = (Button)findViewById(R.id.btn_infor);
 
         btn_infor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //버튼 선언, xml에서 가져오기
-        Button btn_write = (Button) findViewById(R.id.btn_write);
+        ImageButton btn_write = (ImageButton) findViewById(R.id.btn_write);
 
         btn_write.setOnClickListener(new View.OnClickListener() {
             @Override
