@@ -140,3 +140,6 @@ acitivity_information, InformationActivity 구현 완료 (기본만 함)
 
 activity_information에 textview를 추가해서 이 textview가 어떤 정보인지 알아볼 수 있도록 만듦. (완성본)
 
+<img src="https://user-images.githubusercontent.com/55871387/85221780-b0079a80-b3f1-11ea-8f71-56df5cab288d.jpg"  width="300" height="600">
+
+
