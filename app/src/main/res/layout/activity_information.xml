@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3203A9F4"
     tools:context=".InformationActivity">
 
 
@@ -12,8 +13,8 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="304dp"
-        android:textSize="30sp"
         android:gravity="center"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +25,8 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:textSize="30sp"
         android:gravity="center"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_id"
         app:layout_constraintStart_toStartOf="@+id/tv_id"
         app:layout_constraintTop_toBottomOf="@+id/tv_id" />
@@ -35,8 +36,8 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:textSize="30sp"
         android:gravity="center"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_pass"
         app:layout_constraintStart_toStartOf="@+id/tv_pass"
         app:layout_constraintTop_toBottomOf="@+id/tv_pass" />
@@ -46,8 +47,8 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:textSize="30sp"
         android:gravity="center"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_name"
         app:layout_constraintStart_toStartOf="@+id/tv_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
