@@ -153,3 +153,10 @@ JSON 코드를 읽어서 리스트뷰에 뿌리는 함수 구현
 
 ![image](https://user-images.githubusercontent.com/55871387/85227837-b8c09680-b41a-11ea-9569-e632673b66b5.png)
 
+6월 22일
+
+로그인창에서 뒤로가기 버튼을 두번 눌렀을 때 종료하게끔 구현
+
+<img src = "https://user-images.githubusercontent.com/55236612/85242798-f523df00-b47a-11ea-9029-f6ae0ff6a7c1.png"  width="300" height="600">
+
+listview 클릭이벤트 시 게시물을 보여줄 activity_view 틀 생성
