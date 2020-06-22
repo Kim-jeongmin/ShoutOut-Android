@@ -38,18 +38,18 @@
 
 ## rules
 
-1. 코드를 짜서 master에 merge한 후 [report.md](https://github.com/Kim-jeongmin/ShoutOut-Android/blob/master/report.md) 에 구현한 날짜일에 ㄱ
+코드를 짜서 master에 merge한 후 [report.md](https://github.com/Kim-jeongmin/ShoutOut-Android/blob/master/report.md) 에 구현한 날짜일에 ㄱ
 구현한 기능과 될 수 있다면 사진도 같이 첨부해주세요.
 
 ## unacceptable behavior 
 
-2. 지나친 인신공격.
+1. 지나친 인신공격.
 
-3. 성적 언어 또는 이미지의 사용.
+2. 성적 언어 또는 이미지의 사용.
 
-4. 트롤링 또는 모욕적/해독적 주석.
+3. 트롤링 또는 모욕적/해독적 주석.
 
-5. 명시적 허가 없이 물리적 주소 또는 전자 주소와 같은 다른 개인 정보 게시
+4. 명시적 허가 없이 물리적 주소 또는 전자 주소와 같은 다른 개인 정보 게시
   기타 비윤리적 또는 비전문적 행위
 
    
