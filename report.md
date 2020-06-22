@@ -169,5 +169,11 @@ db의 BOARD 테이브에 있는 모든 내용들을 파싱해오는 함수 구�
 
 <img src = "https://user-images.githubusercontent.com/55871387/85247344-661dc380-b488-11ea-815c-208d6c4dc126.jpg"  width="300" height="600">
 
+viewactivity에서 각 listview에 대한 text(title,writer,date,content)가 보이게끔 구현 미완
 
+viewactivity에서 게시물 아래 댓글창과 업로드 버튼, 좋아요 버튼 구현
+
+<img src="https://user-images.githubusercontent.com/55236612/85291924-1ebe2400-b4d6-11ea-95ad-a969d9bc603e.png"  width="300" height="600">
+
+댓글창과 업로드 버튼에 대한 실행 미완, 좋아요 버튼 카운트는 되나, 각 게시물에 대한 카운팅 저장은 안되고 앱을 나갔다 들어오면 초기화 됨
 
