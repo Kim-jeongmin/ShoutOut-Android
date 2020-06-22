@@ -1,11 +1,11 @@
-###### Contributing to 'Shout Out'
+# Contributing to 'Shout Out'
 
 ---
 
 Thank you for supporting us and our project ‘Shout Out’. This is our project on Opensource Software development class, and our second project on our own. If this project fits on yours, you would need help as opensource developers. We tried to summarize our works we’ve done before, but it was not easy to make it. Reading this document will help you save time and work efficiently with the developers and other contributors.
 
 
-##### Development Ideology
+## Development Ideology
 
 ---
 
@@ -18,35 +18,35 @@ We pursue,
 3. The development which shares values and interest fields each other.
 
 
-##### Translations
+## Translations
 
 ---
 
-##### Issues
+## Issues
 
 ---
 
-##### Pull Requests
+## Pull Requests
 
 ---
 
-##### CLA
+## CLA
 
 ---
 
-##### Follow the Code Style Guidelines
+## Follow the Code Style Guidelines
 
 ---
 
-##### Submit Finished and Well-Tested Pull Requests
+## Submit Finished and Well-Tested Pull Requests
 
 ---
 
-##### How Can I Contribute
+## How Can I Contribute
 
 ----
 
-##### What We Are Going To Do
+## What We Are Going To Do
 
 --- 
 
