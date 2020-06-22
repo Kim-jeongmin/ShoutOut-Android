@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class MainActivity extends AppCompatActivity {
 
+    private long time= 0;
     private TextView tv_id;
     private DrawerLayout drawerLayout;
     private View drawerView;
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv_id.setText(userID);
 
-        Button btn_infor = (Button)findViewById(R.id.btn_infor);
+            Button btn_infor = (Button)findViewById(R.id.btn_infor);
 
         btn_infor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //버튼 선언, xml에서 가져오기
-        Button btn_write = (Button) findViewById(R.id.btn_write);
+        ImageButton btn_write = (ImageButton) findViewById(R.id.btn_write);
 
         btn_write.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -298,4 +300,16 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
+
+
+    //뒤로가기 버튼을 두번누르면 종료
+    @Override
+    public void onBackPressed(){
+        if (System.currentTimeMillis() - time >= 2000) {
+            time = System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(), "뒤로가기 버튼을 한번 더 누르면 종료합니다.", Toast.LENGTH_SHORT).show();
+        } else if (System.currentTimeMillis() - time < 2000) {
+            finish();
+        }
+    }
 }
