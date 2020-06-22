@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,8 +19,22 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv_id;
     private DrawerLayout drawerLayout;
     private View drawerView;
+    ArrayAdapter<String> adapter;
 
     //받아올 data(사용자가 쓴 글)
     List<String> data = new ArrayList<>();
@@ -97,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         //xml에서 담아온 listview 정의
         ListView listView = (ListView) findViewById(R.id.listview_posts);
         //adapter 선언: 리스트 방식, LIST_POST의 정보를 adapter에
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, data);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
         //listview와 adapter를 연결
         listView.setAdapter(adapter);
 
@@ -106,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         data.add("post2 - Mike - 2020/6/7");
         data.add("post3 - Sarah - 2020/6/8");
         //상태 저장
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -135,7 +153,129 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Getlistdata getlistdata = new Getlistdata();
+        getlistdata.execute();
+
     }
+
+        public class Getlistdata extends AsyncTask<String, Void, String[]> {
+
+            private final String LOG_TAG = Getlistdata.class.getSimpleName();
+
+            private  String[] getListDataFromJson(String dataJsonStr)
+                throws JSONException{
+
+                final String STR_NUM = "BBS_NO";
+                final String STR_ID = "userID";
+                final String STR_TITLE = "TITLE";
+                final String STR_CON = "CONTENT";
+                final String STR_DATE = "REG_DATE";
+
+                JSONObject dataJson = new JSONObject(dataJsonStr);
+                JSONArray dataArray = dataJson.getJSONArray("BBSList");
+
+                String[] resultStrs = new String[dataArray.length()];
+                for(int i=0;i < dataArray.length(); i++){
+                    int num;
+                    String ID;
+                    String description;
+                    String title;
+                    String date;
+
+                    JSONObject data = dataArray.getJSONObject(i);
+
+                    num = data.getInt(STR_NUM);
+                    ID = data.getString(STR_ID);
+                    description = data.getString(STR_CON);
+                    title = data.getString(STR_TITLE);
+                    date = data.getString(STR_DATE);
+
+                    resultStrs[i] = num + "-" + ID + "-" + title + "-" + date;
+                 }
+
+                for (String s: resultStrs) {
+                    Log.v(LOG_TAG, "data entry " + s);
+                }
+                return resultStrs;
+            }
+
+
+            @Override
+            protected String[] doInBackground(String... params) {
+                HttpURLConnection urlConnection =  null;
+                BufferedReader reader = null;
+
+                String dataJsonStr = null;
+
+                try {
+                    final String URL = "http://kimmessi.dothome.co.kr/BBSList.php";
+
+                    Uri builtUri = Uri.parse(URL).buildUpon().build();
+
+                    URL url = new URL(builtUri.toString());
+                    Log.v(LOG_TAG,"Built URI" + builtUri.toString());
+
+                    urlConnection = (HttpURLConnection) url.openConnection();
+                    urlConnection.setRequestMethod("GET");
+                    urlConnection.connect();
+
+                    InputStream inputStream = urlConnection.getInputStream();
+                    StringBuffer buffer = new StringBuffer();
+                    if(inputStream == null) {
+                        return null;
+                    }
+                    reader = new BufferedReader(new InputStreamReader(inputStream));
+
+                    String line;
+
+                    while((line = reader.readLine()) != null) {
+
+                        buffer.append(line + "\n");
+
+                    }
+
+                    if(buffer.length() == 0) {
+                        return null;
+                    }
+
+                    dataJsonStr = buffer.toString();
+
+                    Log.v(LOG_TAG,"data String " + dataJsonStr);
+                }catch (IOException e) {
+                    Log.e(LOG_TAG, "Error",e);
+
+                    return null;
+                }finally {
+                    if(urlConnection != null) {
+                        urlConnection.disconnect();
+                    }
+                    if(reader != null) {
+                        try {
+                            reader.close();
+                        }catch (final IOException e){
+                            Log.e(LOG_TAG,"Error closing stream", e);
+                        }
+                    }
+                }
+                try {
+                    return getListDataFromJson(dataJsonStr);
+                }catch (JSONException e){
+                    Log.e(LOG_TAG,e.getMessage(),e);
+                    e.printStackTrace();
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(String[] result) {
+                if(result != null){
+                    adapter.clear();
+                    for(String Getdata : result){
+                        adapter.add(Getdata);
+                    }
+                }
+            }
+        }
 
     DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {
         @Override
@@ -158,6 +298,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+
+
 
     //뒤로가기 버튼을 두번누르면 종료
     @Override
