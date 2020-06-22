@@ -162,3 +162,5 @@ JSON 코드를 읽어서 리스트뷰에 뿌리는 함수 구현
 listview 클릭이벤트 시 게시물을 보여줄 activity_view 틀 생성
 
 메인창에서 뒤로가기 버튼을 두번 눌렀을 때 종료하게끔 구현
+
+<img src = "https://user-images.githubusercontent.com/55236612/85246469-ad568500-b485-11ea-9586-56cd2ffb5340.png"  width="300" height="600">
