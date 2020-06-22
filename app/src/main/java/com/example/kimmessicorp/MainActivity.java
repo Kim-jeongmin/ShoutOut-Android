@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                     title = data.getString(STR_TITLE);
                     date = data.getString(STR_DATE);
 
-                    resultStrs[i] = num + "-" + ID + "-" + description + "-" + title + "-" + date;
+                    resultStrs[i] = num + "-" + ID + "-" + title + "-" + date;
                  }
 
                 for (String s: resultStrs) {
