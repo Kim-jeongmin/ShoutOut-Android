@@ -164,3 +164,10 @@ listview 클릭이벤트 시 게시물을 보여줄 activity_view 틀 생성
 메인창에서 뒤로가기 버튼을 두번 눌렀을 때 종료하게끔 구현
 
 <img src = "https://user-images.githubusercontent.com/55236612/85246469-ad568500-b485-11ea-9586-56cd2ffb5340.png"  width="300" height="600">
+
+db의 BOARD 테이브에 있는 모든 내용들을 파싱해오는 함수 구현
+
+<img src = "https://user-images.githubusercontent.com/55871387/85247344-661dc380-b488-11ea-815c-208d6c4dc126.jpg"  width="300" height="600">
+
+
+
