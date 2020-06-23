@@ -25,7 +25,7 @@ public class ViewActivity extends AppCompatActivity {
 
     private EditText comment;
     private Button comment_addbutton;
-    private TextView titleview,writerview,dateview,contentview;
+    private TextView titleView,writerView,dateView,contentView;
     int count = 0;
 
     @Override
@@ -33,26 +33,47 @@ public class ViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
 
-        //intent와 userID 받아오기
+
         Intent intent = getIntent();
-        final String userID = intent.getExtras().getString("userID");
-
+        final String BBS_s = intent.getExtras().getString("BBS_NO");
+        int BBS_NO = Integer.parseInt(BBS_s);
         //게시물의 각 textview 키 값 배정
-        titleview = (TextView)findViewById(R.id.titleview);
-        writerview = (TextView)findViewById(R.id.writerview);
-        dateview = (TextView)findViewById(R.id.dateview);
-        contentview = (TextView)findViewById(R.id.contentview);
+        titleView = (TextView)findViewById(R.id.titleview);
+        writerView = (TextView)findViewById(R.id.writerview);
+        dateView = (TextView)findViewById(R.id.dateview);
+        contentView = (TextView)findViewById(R.id.contentview);
 
-        //db에서 받아오기 할 부분
-        String title = intent.getStringExtra("TITLE");
-        String writer = intent.getStringExtra("userID");
-        String date = intent.getStringExtra("REG_DATE");
-        String content = intent.getStringExtra("CONTENT");
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try{
+                    JSONObject jsonObject = new JSONObject(response);
+                    boolean success = jsonObject.getBoolean("success");
+                    if(success) {
+                        String TITLE = jsonObject.getString("TITLE");
+                        String userID = jsonObject.getString("userID");
+                        String CONTENT = jsonObject.getString("CONTENT");
+                        String REG_DATE = jsonObject.getString("REG_DATE");
 
-        titleview.setText(title);
-        writerview.setText(writer);
-        dateview.setText(date);
-        contentview.setText(content);
+                        titleView.setText(TITLE);
+                        writerView.setText(userID);
+                        contentView.setText(CONTENT);
+                        dateView.setText(REG_DATE);
+
+                    }
+                    else {
+                        return;
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        viewRequest viewRequest = new viewRequest(BBS_NO,responseListener);
+        RequestQueue queue = Volley.newRequestQueue(ViewActivity.this);
+        queue.add(viewRequest);
+
 
 
         //좋아요 이미지 버튼
