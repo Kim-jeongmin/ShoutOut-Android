@@ -142,4 +142,38 @@ activity_information에 textview를 추가해서 이 textview가 어떤 정보�
 
 <img src="https://user-images.githubusercontent.com/55871387/85221780-b0079a80-b3f1-11ea-8f71-56df5cab288d.jpg"  width="300" height="600">
 
+introActivity 를 만들어 앱 시작할때 앱 로고와 아이콘을 보여주는 화면을 만듦.
+background color변경, 앱 label 변경
+
+<img src = "https://user-images.githubusercontent.com/54140431/85226142-e6084700-b410-11ea-9393-dc6675f3ebd2.png" width="300" height="600">
+
+BOARD 테이블의 서버 코드인 BBSList코드 수정
+
+JSON 코드를 읽어서 리스트뷰에 뿌리는 함수 구현
+
+![image](https://user-images.githubusercontent.com/55871387/85227837-b8c09680-b41a-11ea-9569-e632673b66b5.png)
+
+6월 22일
+
+로그인창에서 뒤로가기 버튼을 두번 눌렀을 때 종료하게끔 구현
+
+<img src = "https://user-images.githubusercontent.com/55236612/85242798-f523df00-b47a-11ea-9029-f6ae0ff6a7c1.png"  width="300" height="600">
+
+listview 클릭이벤트 시 게시물을 보여줄 activity_view 틀 생성
+
+메인창에서 뒤로가기 버튼을 두번 눌렀을 때 종료하게끔 구현
+
+<img src = "https://user-images.githubusercontent.com/55236612/85246469-ad568500-b485-11ea-9586-56cd2ffb5340.png"  width="300" height="600">
+
+db의 BOARD 테이브에 있는 모든 내용들을 파싱해오는 함수 구현
+
+<img src = "https://user-images.githubusercontent.com/55871387/85247344-661dc380-b488-11ea-815c-208d6c4dc126.jpg"  width="300" height="600">
+
+viewactivity에서 각 listview에 대한 text(title,writer,date,content)가 보이게끔 구현 미완
+
+viewactivity에서 게시물 아래 댓글창과 업로드 버튼, 좋아요 버튼 구현
+
+<img src="https://user-images.githubusercontent.com/55236612/85291924-1ebe2400-b4d6-11ea-95ad-a969d9bc603e.png"  width="300" height="600">
+
+댓글창과 업로드 버튼에 대한 실행 미완, 좋아요 버튼 카운트는 되나, 각 게시물에 대한 카운팅 저장은 안되고 앱을 나갔다 들어오면 초기화 됨
 

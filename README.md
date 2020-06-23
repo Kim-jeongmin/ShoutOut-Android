@@ -1,4 +1,4 @@
-# Kimmessicorp
+# ShoutOut
 
 안녕하세요 이번에 오픈소스 프로젝트를 하게된 Kimmessicorp입니다.
 
