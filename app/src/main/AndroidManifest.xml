@@ -6,15 +6,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/megaphone2"
+        android:icon="@drawable/icon"
         android:label="Shout Out"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/megaphone"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-        android:name=".introActivity"
-        android:label="Shout Out">
+            android:name=".introActivity"
+            android:label="Shout Out">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
