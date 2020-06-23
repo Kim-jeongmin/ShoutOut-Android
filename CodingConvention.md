@@ -50,6 +50,10 @@
 
 5. 변수 작성시 그 쓰임새와 일치하게끔 변수이름을 지정하십시오.
 
+6. 액티비티나 xml 파일 이름은 xxxActivity , activity_xxx 이런 식으로 작성해주십시오
+
+7. 주석은 되도록 최소한으로 적어주시고 코드를 가독성 있게 짜는 걸 목표로 짜십시오.
+
 ## rules
 
 1. 코드를 짜서 master에 merge한 후 [report.md](https://github.com/Kim-jeongmin/ShoutOut-Android/blob/master/report.md) 에 구현한 날짜일에
