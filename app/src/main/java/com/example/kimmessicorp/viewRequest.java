@@ -13,15 +13,20 @@ public class viewRequest extends StringRequest {
 
     //서버 URL 설정 (PHP 파일 연동)
     final static private String URL = "http://kimmessi.dothome.co.kr/post.php";
-    private Map<String,String> map;
+    private Map<String, String> map;
 
 
-    public viewRequest(String BBS_NO, Response.Listener<String> listener) {
+    public viewRequest(int BBS_NO, Response.Listener<String> listener) {
         super(Request.Method.POST, URL, listener, null);
 
         map = new HashMap<>();
-        map.put("BBS_NO",BBS_NO);
+        map.put("BBS_NO",BBS_NO + "");
 
+    }
+
+    @Override
+    protected Map<String, String> getParams() throws AuthFailureError {
+        return map;
     }
 
 }

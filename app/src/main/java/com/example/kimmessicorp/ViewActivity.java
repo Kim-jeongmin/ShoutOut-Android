@@ -35,7 +35,8 @@ public class ViewActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        final String BBS_NO = intent.getStringExtra("BBS_NO");
+        final String BBS_s = intent.getExtras().getString("BBS_NO");
+        int BBS_NO = Integer.parseInt(BBS_s);
         //게시물의 각 textview 키 값 배정
         titleView = (TextView)findViewById(R.id.titleview);
         writerView = (TextView)findViewById(R.id.writerview);
