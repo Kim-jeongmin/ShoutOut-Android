@@ -125,6 +125,16 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //list를 눌렀을 때 화면 전환 -> 게시글 보여주기
                 Intent intent = new Intent(MainActivity.this, ViewActivity.class);
+
+                String str = adapter.getItem(position);
+                String BBS_NO = "";
+                int i = 0;
+                while(str.charAt(i) != '-') {
+                    BBS_NO += str.charAt(i);
+                    i++;
+                }
+                intent.putExtra("BBS_NO",BBS_NO);
+
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "게시글", Toast.LENGTH_SHORT).show();
             }
@@ -166,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
                 JSONObject dataJson = new JSONObject(dataJsonStr);
                 JSONArray dataArray = dataJson.getJSONArray("BBSList");
+
 
                 String[] resultStrs = new String[dataArray.length()];
                 for(int i=0;i < dataArray.length(); i++){

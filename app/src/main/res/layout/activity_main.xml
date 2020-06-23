@@ -22,7 +22,7 @@
 
         <ListView
             android:id="@+id/listview_posts"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
@@ -33,7 +33,6 @@
             android:background="#3203A9F4">
 
         </ListView>
-
         <ImageButton
             android:id="@+id/btn_write"
             android:layout_width="wrap_content"
