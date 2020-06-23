@@ -177,3 +177,7 @@ viewactivity에서 게시물 아래 댓글창과 업로드 버튼, 좋아요 버
 
 댓글창과 업로드 버튼에 대한 실행 미완, 좋아요 버튼 카운트는 되나, 각 게시물에 대한 카운팅 저장은 안되고 앱을 나갔다 들어오면 초기화 됨
 
+메뉴 디자인과 앱의 전체적인 디자인을 조금 바꿔봄
+<img src="https://user-images.githubusercontent.com/54140431/85349495-8eb1c600-b539-11ea-9d9b-16b15e0e6bae.png"  width="300" height="600">
+
+
