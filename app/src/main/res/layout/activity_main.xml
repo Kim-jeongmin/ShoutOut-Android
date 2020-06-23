@@ -34,15 +34,6 @@
 
         </ListView>
 
-        <Button
-            android:id="@+id/btn_open"
-            android:layout_width="107dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:text="메뉴"
-            android:textStyle="bold" />
-
         <ImageButton
             android:id="@+id/btn_write"
             android:layout_width="wrap_content"

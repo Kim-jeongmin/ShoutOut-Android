@@ -9,6 +9,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -85,15 +87,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_open = (Button)findViewById(R.id.btn_open);
-
-        btn_open.setOnClickListener(new View.OnClickListener() { // 메뉴 열기 버튼 누를 때 열기
-            @Override
-            public void onClick(View v) {
-                drawerLayout.openDrawer(drawerView);
-            }
-        });
-
         drawerLayout.setDrawerListener(listener);
         drawerView.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -102,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_close = (Button)findViewById(R.id.btn_close);
-        btn_close.setOnClickListener(new View.OnClickListener() { //메뉴 닫기 버튼 누를 때 닫기
+        ImageButton close = (ImageButton)findViewById(R.id.close);
+        close.setOnClickListener(new View.OnClickListener() { //메뉴 닫기 버튼 누를 때 닫기
             @Override
             public void onClick(View v) {
                 drawerLayout.closeDrawers();
@@ -299,7 +292,23 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_btn1:
+                drawerLayout.openDrawer(drawerView);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 
     //뒤로가기 버튼을 두번누르면 종료
