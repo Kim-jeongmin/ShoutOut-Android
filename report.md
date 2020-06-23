@@ -173,6 +173,7 @@ viewactivity에서 각 listview에 대한 text(title,writer,date,content)가 보
 
 viewactivity에서 게시물 아래 댓글창과 업로드 버튼, 좋아요 버튼 구현
 
+
 <img src="https://user-images.githubusercontent.com/55236612/85291924-1ebe2400-b4d6-11ea-95ad-a969d9bc603e.png"  width="300" height="600">
 
 댓글창과 업로드 버튼에 대한 실행 미완, 좋아요 버튼 카운트는 되나, 각 게시물에 대한 카운팅 저장은 안되고 앱을 나갔다 들어오면 초기화 됨
@@ -181,4 +182,10 @@ viewactivity에서 게시물 아래 댓글창과 업로드 버튼, 좋아요 버
 
 <img src="https://user-images.githubusercontent.com/54140431/85349495-8eb1c600-b539-11ea-9d9b-16b15e0e6bae.png"  width="300" height="600">
 
+게시판에 있는 게시물 클릭시 DB에서 BBS_NO과 일치하는 게시물을 가져와 viewActivity에서 textview로 띄움.
 
+post.php 파일을 서버에 추가함.
+
+<img src="https://user-images.githubusercontent.com/55871387/85419038-8b0b5700-b5ac-11ea-9339-7ece3fd1d1f1.jpg"  width="300" height="600">
+
+<img width="960" alt="post php 코드" src="https://user-images.githubusercontent.com/55871387/85419125-a5453500-b5ac-11ea-9c8d-7debda4b09bd.png">
