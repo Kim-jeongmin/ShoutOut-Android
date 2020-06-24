@@ -16,9 +16,6 @@ public class InformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
         tv_id = (TextView)findViewById(R.id.tv_id);
         tv_pass = (TextView)findViewById(R.id.tv_pass);
         tv_name = (TextView)findViewById(R.id.tv_name);

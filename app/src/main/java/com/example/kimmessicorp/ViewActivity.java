@@ -34,10 +34,6 @@ public class ViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-
         Intent intent = getIntent();
         final String BBS_s = intent.getExtras().getString("BBS_NO");
         int BBS_NO = Integer.parseInt(BBS_s);

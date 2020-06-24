@@ -27,9 +27,6 @@ public class WriteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
         Intent intent = getIntent();
         final String userID = intent.getExtras().getString("userID");
 
