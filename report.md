@@ -198,7 +198,7 @@ post.php 파일을 서버에 추가함.
 <img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
 <img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
 
-db에 댓글에 관한 데이터를 관장하는 COMMENTBOARD 추가(COMMENT,c_userID,c_REG_DATE)
+db에 댓글에 관한 데이터를 관장하는 COMMENTBOARD 추가(c_BBS_NO, COMMENT, c_userID, c_REG_DATE)
 
 <img src="https://user-images.githubusercontent.com/55236612/85505502-7325e880-b629-11ea-9458-dd0d012fc83f.png">
 
