@@ -12,7 +12,7 @@ import java.util.Map;
 public class cviewRequest extends StringRequest {
 
     //서버 URL 설정 (PHP 파일 연동)
-    final static private String URL = "http://kimmessi.dothome.co.kr/post.php";
+    final static private String URL = "http://kimmessi.dothome.co.kr/cpost.php";
     private Map<String, String> map;
 
 
