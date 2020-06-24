@@ -181,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
                 final String STR_NUM = "BBS_NO";
                 final String STR_ID = "userID";
                 final String STR_TITLE = "TITLE";
-                final String STR_CON = "CONTENT";
                 final String STR_DATE = "REG_DATE";
 
                 JSONObject dataJson = new JSONObject(dataJsonStr);
@@ -192,7 +191,6 @@ public class MainActivity extends AppCompatActivity {
                 for(int i=0;i < dataArray.length(); i++){
                     int num;
                     String ID;
-                    String description;
                     String title;
                     String date;
 
@@ -200,7 +198,6 @@ public class MainActivity extends AppCompatActivity {
 
                     num = data.getInt(STR_NUM);
                     ID = data.getString(STR_ID);
-                    description = data.getString(STR_CON);
                     title = data.getString(STR_TITLE);
                     date = data.getString(STR_DATE);
 
