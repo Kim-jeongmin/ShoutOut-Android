@@ -35,6 +35,7 @@ public class ViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view);
 
         Intent intent = getIntent();
+        final String userID = intent.getExtras().getString("userID");
         final String BBS_s = intent.getExtras().getString("BBS_NO");
         int BBS_NO = Integer.parseInt(BBS_s);
         //게시물의 각 textview 키 값 배정
@@ -121,26 +122,26 @@ public class ViewActivity extends AppCompatActivity {
                 };
 
 //                //서버로 요청(이 부분은 commentRequest 및 db에 테이블 생성 후 작성)
-//                commentRequest commentRequest = new commentRequest(userID,comment,responseListener);
+//                cviewRequest cviewRequest = new cviewRequest(userID, newcomment, responseListener);
 //                RequestQueue queue = Volley.newRequestQueue(ViewActivity.this);
-//                queue.add(commentRequest);
+//                queue.add(cviewRequest);
             }
         });
 
 
         //comment text 클릭시 intent
-        TextView text = (TextView) findViewById(R.id.comments);
+        TextView text2 = (TextView) findViewById(R.id.comments);
 
-        text.setOnClickListener(new View.OnClickListener() {
+        text2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //text클릭시 수행
                 //댓글 토스트 메세지
                 //댓글 listview로 화면 전
                 Toast.makeText(getApplicationContext(), "댓글",Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(ViewActivity.this, CViewActivity.class);
+                Intent cintent = new Intent(ViewActivity.this, CViewActivity.class);
 //                intent.putExtra("c_userID",c_userID);
-                startActivity(intent2);
+                startActivity(cintent);
             }
         });
     }
