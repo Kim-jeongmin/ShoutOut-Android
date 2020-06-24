@@ -195,8 +195,6 @@ post.php 파일을 서버에 추가함.
 모든 Activity화면 디자인 수정
 
 <img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
-<img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
-<img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
 
 db에 댓글에 관한 데이터를 관장하는 COMMENTBOARD 추가(c_BBS_NO, COMMENT, c_userID, c_REG_DATE)
 
@@ -214,4 +212,4 @@ BBSComment.php 구현
 
 <img src="https://user-images.githubusercontent.com/55236612/85505995-7e2d4880-b62a-11ea-9dde-12aa32cd11b4.png">
 
-새로고침 기능 
+새로고침 기능 구현 완료
