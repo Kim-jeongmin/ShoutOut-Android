@@ -322,6 +322,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_btn1:
                 drawerLayout.openDrawer(drawerView);
                 return true;
+            case R.id.refresh:
+                drawerLayout.openDrawer(drawerView);    //새로고침 코드로 넣어주세요.
             default:
                 return super.onOptionsItemSelected(item);
         }
