@@ -189,3 +189,9 @@ post.php 파일을 서버에 추가함.
 <img src="https://user-images.githubusercontent.com/55871387/85419038-8b0b5700-b5ac-11ea-9339-7ece3fd1d1f1.jpg"  width="300" height="600">
 
 <img width="960" alt="post php 코드" src="https://user-images.githubusercontent.com/55871387/85419125-a5453500-b5ac-11ea-9c8d-7debda4b09bd.png">
+
+6월 24일
+
+모든 Activity화면 디자인 수정
+
+<img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
