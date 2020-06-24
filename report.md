@@ -200,8 +200,16 @@ post.php 파일을 서버에 추가함.
 
 db에 댓글에 관한 데이터를 관장하는 COMMENTBOARD 추가(COMMENT,c_userID,c_REG_DATE)
 
-<img src="https://user-images.githubusercontent.com/55236612/85505502-7325e880-b629-11ea-9458-dd0d012fc83f.png"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55236612/85505502-7325e880-b629-11ea-9458-dd0d012fc83f.png">
 
 kimmessi.dothome.co.kr/BBSComment.php 구현 모습
 
-<img src="https://user-images.githubusercontent.com/55236612/85505588-9d77a600-b629-11ea-9ac3-a73f7a3744a5.png"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/55236612/85505588-9d77a600-b629-11ea-9ac3-a73f7a3744a5.png">
+
+BBSCWrite.php 구현
+
+<img src="https://user-images.githubusercontent.com/55236612/85505687-d6b01600-b629-11ea-8c9c-6cef79bebdbe.png">
+
+BBSComment.php 구현
+
+<img src="https://user-images.githubusercontent.com/55236612/85505995-7e2d4880-b62a-11ea-9dde-12aa32cd11b4.png">
