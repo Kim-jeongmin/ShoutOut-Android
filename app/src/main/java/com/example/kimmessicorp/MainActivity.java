@@ -56,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
 //            "post2 - Mike - 2020/6/7",
 //            "post3 - Sarah - 2020/6/8"
 //    };
+    private void refreshListView(){
+        Getlistdata getlistdata = new Getlistdata();
+        getlistdata.execute();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -323,7 +327,7 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(drawerView);
                 return true;
             case R.id.refresh:
-                drawerLayout.openDrawer(drawerView);    //새로고침 코드로 넣어주세요.
+                refreshListView();
             default:
                 return super.onOptionsItemSelected(item);
         }
