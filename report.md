@@ -195,3 +195,13 @@ post.php 파일을 서버에 추가함.
 모든 Activity화면 디자인 수정
 
 <img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
+<img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
+<img src = "https://user-images.githubusercontent.com/54140431/85504250-98652780-b626-11ea-99b0-c9647cf6ddfe.png">
+
+db에 댓글에 관한 데이터를 관장하는 COMMENTBOARD 추가(COMMENT,c_userID,c_REG_DATE)
+
+<img src="https://user-images.githubusercontent.com/55236612/85505502-7325e880-b629-11ea-9458-dd0d012fc83f.png"  width="300" height="600">
+
+kimmessi.dothome.co.kr/BBSComment.php 구현 모습
+
+<img src="https://user-images.githubusercontent.com/55236612/85505588-9d77a600-b629-11ea-9ac3-a73f7a3744a5.png"  width="300" height="600">
