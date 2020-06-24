@@ -64,6 +64,16 @@
                 android:text="Contents"
                 android:textSize="20dp"></TextView>
 
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="780dp"
+                android:text="comments"
+                android:background="#E6E6E6"
+                android:textSize="30dp"></TextView>
+
+
         </RelativeLayout>
 
     </ScrollView>

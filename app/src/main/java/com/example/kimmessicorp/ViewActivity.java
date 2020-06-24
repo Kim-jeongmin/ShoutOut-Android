@@ -126,5 +126,22 @@ public class ViewActivity extends AppCompatActivity {
 //                queue.add(commentRequest);
             }
         });
+
+
+        //comment text 클릭시 intent
+        TextView text = (TextView) findViewById(R.id.comments);
+
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //text클릭시 수행
+                //댓글 토스트 메세지
+                //댓글 listview로 화면 전
+                Toast.makeText(getApplicationContext(), "댓글",Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(ViewActivity.this, CViewActivity.class);
+//                intent.putExtra("c_userID",c_userID);
+                startActivity(intent2);
+            }
+        });
     }
 }
