@@ -37,16 +37,19 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageButton
         android:id="@+id/add_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_width="76dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:layout_marginTop="16dp"
-        android:text="UPLOAD"
+        android:adjustViewBounds="true"
+        android:background="#0003A9F4"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/title"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/upload"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

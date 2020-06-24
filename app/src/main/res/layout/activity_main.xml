@@ -30,6 +30,8 @@
             android:layout_marginEnd="0dp"
             android:layout_marginRight="0dp"
             android:layout_marginBottom="0dp"
+            android:dividerHeight="1dp"
+            android:divider="#ffffff"
             android:background="#3203A9F4">
 
         </ListView>

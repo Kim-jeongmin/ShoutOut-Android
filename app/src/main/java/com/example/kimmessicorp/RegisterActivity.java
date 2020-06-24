@@ -1,5 +1,6 @@
 package com.example.kimmessicorp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -25,6 +26,9 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        ActionBar actionBar2 = getSupportActionBar();
+        actionBar2.setDisplayHomeAsUpEnabled(true);
 
         // 버튼과 EditText의 키 값 배정
         et_id = findViewById(R.id.et_id);

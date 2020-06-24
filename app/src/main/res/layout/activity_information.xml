@@ -9,12 +9,26 @@
 
 
     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="64dp"
+        android:text="Kimmessicorp"
+        android:textAlignment="center"
+        android:textColor="#FD000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <TextView
         android:id="@+id/tv_id"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="240dp"
         android:gravity="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +40,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_id"
         app:layout_constraintStart_toStartOf="@+id/tv_id"
         app:layout_constraintTop_toBottomOf="@+id/tv_id" />
@@ -37,7 +51,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_pass"
         app:layout_constraintStart_toStartOf="@+id/tv_pass"
         app:layout_constraintTop_toBottomOf="@+id/tv_pass" />
@@ -48,7 +62,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_name"
         app:layout_constraintStart_toStartOf="@+id/tv_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
@@ -58,24 +72,51 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="회원 정보"
-        android:textSize="50sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="이름 :"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
         android:gravity="center"
         android:text="ID :"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_id"
         app:layout_constraintEnd_toStartOf="@+id/tv_id"
+        app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_id" />
+        app:layout_constraintTop_toTopOf="@+id/tv_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="나이 :"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_age"
+        app:layout_constraintEnd_toStartOf="@+id/tv_age"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_age"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -83,35 +124,14 @@
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginLeft="55dp"
-        android:text="비밀번호 :"
-        android:textSize="30sp"
+        android:text="PW :"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_pass"
         app:layout_constraintEnd_toStartOf="@+id/tv_pass"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_pass"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="이름 :"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
-        app:layout_constraintEnd_toStartOf="@+id/tv_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_name" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="나이 :"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_age"
-        app:layout_constraintEnd_toStartOf="@+id/tv_age"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_age" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

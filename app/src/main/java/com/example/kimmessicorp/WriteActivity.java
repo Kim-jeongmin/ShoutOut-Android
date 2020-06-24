@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
@@ -19,12 +21,13 @@ import org.json.JSONObject;
 public class WriteActivity extends AppCompatActivity {
 
     private EditText title, content;
-    private Button addbutton;
+    private ImageButton addbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
+
         Intent intent = getIntent();
         final String userID = intent.getExtras().getString("userID");
 

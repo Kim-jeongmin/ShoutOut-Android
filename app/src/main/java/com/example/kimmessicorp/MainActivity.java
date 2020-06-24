@@ -1,6 +1,7 @@
 package com.example.kimmessicorp;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -60,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar ab = getSupportActionBar();
+        ab.setLogo(R.drawable.ii);
+        ab.setDisplayUseLogoEnabled(true) ;
+        ab.setDisplayShowHomeEnabled(true) ;
 
         tv_id = findViewById(R.id.tv_id);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -316,6 +322,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_btn1:
                 drawerLayout.openDrawer(drawerView);
                 return true;
+            case R.id.refresh:
+                drawerLayout.openDrawer(drawerView);    //새로고침 코드로 넣어주세요.
             default:
                 return super.onOptionsItemSelected(item);
         }

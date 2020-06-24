@@ -6,6 +6,7 @@
         <item name="colorPrimary">#1C8ADB</item>
         <item name="colorPrimaryDark">#1C8ADB</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="icon">@drawable/megaphone</item>
     </style>
 
 </resources>

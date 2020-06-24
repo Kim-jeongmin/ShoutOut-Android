@@ -1,5 +1,6 @@
 package com.example.kimmessicorp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -27,6 +28,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ActionBar ab = getSupportActionBar();
+        ab.setLogo(R.drawable.ii);
+        ab.setDisplayUseLogoEnabled(true) ;
+        ab.setDisplayShowHomeEnabled(true) ;
 
         et_id = findViewById(R.id.et_id);
         et_pass = findViewById(R.id.et_pass);
