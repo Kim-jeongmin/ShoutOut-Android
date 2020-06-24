@@ -28,7 +28,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="400dp"
                 android:text="Title"
-                android:textSize="32dp"
+                android:textSize="30dp"
                 android:textStyle="bold"></TextView>
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_width="401dp"
                 android:layout_height="713dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="170dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="Contents"
@@ -70,17 +70,19 @@
 
     <ImageButton
         android:id="@+id/btn_like"
-        android:layout_width="64dp"
-        android:layout_height="66dp"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="347dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:adjustViewBounds="true"
         android:background="#0003A9F4"
         android:scaleType="fitXY"
         android:tint="#3203A9F4"
         app:srcCompat="@drawable/like" />
+
+
 
     <EditText
         android:id="@+id/comment"
@@ -98,15 +100,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/add_comment_button"
-        android:layout_width="78dp"
-        android:layout_height="66dp"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="10dp"
-        android:text="UPLOAD" />
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:background="#0003A9F4"
+        android:paddingRight="20dp"
+        android:paddingBottom="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/send" />
 
 </RelativeLayout>
 

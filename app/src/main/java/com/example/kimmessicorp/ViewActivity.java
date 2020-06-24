@@ -25,7 +25,7 @@ import org.json.JSONObject;
 public class ViewActivity extends AppCompatActivity {
 
     private EditText comment;
-    private Button comment_addbutton;
+    private ImageButton comment_addbutton;
     private TextView titleView,writerView,dateView,contentView;
     int count = 0;
 
@@ -93,7 +93,7 @@ public class ViewActivity extends AppCompatActivity {
 
         //댓글창과 업로드 버튼 키 값 배정
         comment = (EditText)findViewById(R.id.comment);
-        comment_addbutton = (Button)findViewById(R.id.add_comment_button);
+        comment_addbutton = (ImageButton)findViewById(R.id.add_comment_button);
 
         //comment_addbutton 클릭 시 수행
         comment_addbutton.setOnClickListener(new View.OnClickListener() {
