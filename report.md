@@ -213,3 +213,5 @@ BBSCWrite.php 구현
 BBSComment.php 구현
 
 <img src="https://user-images.githubusercontent.com/55236612/85505995-7e2d4880-b62a-11ea-9dde-12aa32cd11b4.png">
+
+새로고침 기능 
