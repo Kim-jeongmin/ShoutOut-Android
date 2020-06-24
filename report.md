@@ -213,3 +213,9 @@ BBSComment.php 구현
 <img src="https://user-images.githubusercontent.com/55236612/85505995-7e2d4880-b62a-11ea-9dde-12aa32cd11b4.png">
 
 새로고침 기능 구현 완료
+
+cpost.php 파일 구현
+
+<img src="https://user-images.githubusercontent.com/55236612/85514023-8be8cb00-b636-11ea-8f2c-6f54bc667051.png">
+
+댓글 창 관련 CViewActivity, cviewRequest, activity_cview 추가
