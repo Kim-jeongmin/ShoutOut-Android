@@ -34,16 +34,19 @@ public class ViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
 
+        //intent 받아오며 데이터에서 userID와 BBS_NO 키값 받아오기
         Intent intent = getIntent();
         final String userID = intent.getExtras().getString("userID");
         final String BBS_s = intent.getExtras().getString("BBS_NO");
         int BBS_NO = Integer.parseInt(BBS_s);
+
         //게시물의 각 textview 키 값 배정
         titleView = (TextView)findViewById(R.id.titleview);
         writerView = (TextView)findViewById(R.id.writerview);
         dateView = (TextView)findViewById(R.id.dateview);
         contentView = (TextView)findViewById(R.id.contentview);
 
+        //서버로부터 응답 받고, json으로부터 데이터 가져오기
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -71,6 +74,7 @@ public class ViewActivity extends AppCompatActivity {
             }
         };
 
+        //서버로부터 요청
         viewRequest viewRequest = new viewRequest(BBS_NO,responseListener);
         RequestQueue queue = Volley.newRequestQueue(ViewActivity.this);
         queue.add(viewRequest);
@@ -121,7 +125,7 @@ public class ViewActivity extends AppCompatActivity {
                     }
                 };
 
-//                //서버로 요청(이 부분은 commentRequest 및 db에 테이블 생성 후 작성)
+//                //서버로부터 요청
 //                cviewRequest cviewRequest = new cviewRequest(userID, newcomment, responseListener);
 //                RequestQueue queue = Volley.newRequestQueue(ViewActivity.this);
 //                queue.add(cviewRequest);
@@ -129,9 +133,8 @@ public class ViewActivity extends AppCompatActivity {
         });
 
 
-        //comment text 클릭시 intent
+        //comment text 클릭시 intent->CViewActivity로 화면전환
         TextView text2 = (TextView) findViewById(R.id.comments);
-
         text2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
 //            "post2 - Mike - 2020/6/7",
 //            "post3 - Sarah - 2020/6/8"
 //    };
+
+    //새로고침 구현
     private void refreshListView(){
         Getlistdata getlistdata = new Getlistdata();
         getlistdata.execute();
@@ -66,11 +68,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //actionbar에 logo 및 ui개선
         ActionBar ab = getSupportActionBar();
         ab.setLogo(R.drawable.ii);
         ab.setDisplayUseLogoEnabled(true) ;
         ab.setDisplayShowHomeEnabled(true) ;
 
+        //회원 정보를 보여주게끔 구현
         tv_id = findViewById(R.id.tv_id);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawerView = (View)findViewById(R.id.drawer);
@@ -81,10 +85,11 @@ public class MainActivity extends AppCompatActivity {
         final String userName = intent.getStringExtra("userName");
         final String userAge = intent.getStringExtra("userAge");
 
+        //회원 이름을 text에
         tv_id.setText(userID);
 
-            Button btn_infor = (Button)findViewById(R.id.btn_infor);
-
+        //회원 정보 창을 여는 버튼 구현
+        Button btn_infor = (Button)findViewById(R.id.btn_infor);
         btn_infor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //메뉴창 슬라이드로 열리게끔 구현
         drawerLayout.setDrawerListener(listener);
         drawerView.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -105,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //메뉴창 닫기 구현
         ImageButton close = (ImageButton)findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() { //메뉴 닫기 버튼 누를 때 닫기
             @Override
@@ -112,8 +119,6 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.closeDrawers();
             }
         });
-
-
 
         //xml에서 담아온 listview 정의
         ListView listView = (ListView) findViewById(R.id.listview_posts);
@@ -129,13 +134,14 @@ public class MainActivity extends AppCompatActivity {
         //상태 저장
         //adapter.notifyDataSetChanged();
 
-
+        //listview 클릭 시
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //list를 눌렀을 때 화면 전환 -> 게시글 보여주기
                 Intent intent = new Intent(MainActivity.this, ViewActivity.class);
 
+                //adapter에 담긴 데이터를 position 별로 가져와 담기
                 String str = adapter.getItem(position);
                 String BBS_NO = "";
                 int i = 0;
@@ -144,16 +150,13 @@ public class MainActivity extends AppCompatActivity {
                     i++;
                 }
                 intent.putExtra("BBS_NO",BBS_NO);
-
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "게시글", Toast.LENGTH_SHORT).show();
             }
         });
 
-
-        //버튼 선언, xml에서 가져오기
+        //작성 버튼 선언, xml에서 가져오기
         ImageButton btn_write = (ImageButton) findViewById(R.id.btn_write);
-
         btn_write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -171,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+        //json 포맷으로 가공된 데이터를 가져오기
         public class Getlistdata extends AsyncTask<String, Void, String[]> {
 
             private final String LOG_TAG = Getlistdata.class.getSimpleName();
@@ -210,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                 return resultStrs;
             }
 
-
+            //parsing한 데이터 listview에 뿌리기
             @Override
             protected String[] doInBackground(String... params) {
                 HttpURLConnection urlConnection =  null;
@@ -288,6 +292,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+    //메뉴창
     DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {
         @Override
         public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
