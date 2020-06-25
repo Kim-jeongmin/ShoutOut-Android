@@ -98,11 +98,10 @@ public class RegisterActivity extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             if(success) {
-                                // 회원가입 성공
+
                                 Toast.makeText(getApplicationContext(),"중복된 아이디입니다.",Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                // 회원가입 실패
                                 Toast.makeText(getApplicationContext(),"사용할 수 있는아이디입니다.",Toast.LENGTH_SHORT).show();
                                 return;
                             }
