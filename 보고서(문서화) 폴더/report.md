@@ -325,3 +325,11 @@ background color변경, 앱 label 변경
 
 <img width="960" alt="over php구현코드" src="https://user-images.githubusercontent.com/55871387/85641999-18dd6400-b6cb-11ea-9330-f2e2085c9f22.png">
 
+
+
+### 6월 25일
+---
+
+
+
+-앱 설치 시 동일한 앱이 두 개 설치 되는 오류 해결
