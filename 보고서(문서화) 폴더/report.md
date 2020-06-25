@@ -1,20 +1,28 @@
-오픈 소스 프로젝트 보고서
+## 오픈 소스 프로젝트 보고서
 
-6월 2일
+
+### 6월 2일
+
 
 채팅 어플을 만들기로 정함.
 
-6월 3일
+
+### 6월 3일
+
 
 ReadMe에 팀 소개와 프로젝트 내용들을 작성함.
 
-6월 5일
+
+### 6월 5일
+
 
 로그인과 회원가입창을 구성하고 기본적인 뼈대를 구성함
 
 기여 방법을 씀.
 
-6월 6일
+
+### 6월 6일
+
 
 채팅 어플 --> 커뮤니티 어플로 계획 변경
 
@@ -22,7 +30,9 @@ ReadMe에 팀 소개와 프로젝트 내용들을 작성함.
 
 첫화면을 로그인 창으로 변환
 
-6월 7일
+
+### 6월 7일
+
 
 서버 구축
 
@@ -51,7 +61,8 @@ DB 로그인 회원가입 스키마 설계 완료
 ![서버캡쳐본1](https://user-images.githubusercontent.com/55871387/85190422-4608cb80-b2f3-11ea-8035-5389e4ed3025.jpg)
 
 
-6월 8일
+### 6월 8일
+
 
 listview 생성
 
@@ -92,7 +103,9 @@ BBSWrite DB 구축
 
 ![DB](https://user-images.githubusercontent.com/54140431/85196491-837e5080-b315-11ea-938d-6c22a83204ee.png)
 
-6월 9일 
+
+### 6월 9일 
+
 
 슬라이드로 열고 닫고 하는 메뉴 생성
 
@@ -100,7 +113,9 @@ BBSWrite DB 구축
 
 메뉴 닫기 버튼 및 메뉴 열기 버튼 추가
 
-6월 10일
+
+### 6월 10일
+
 
 메뉴판에 회원의 id가 나오게 수정
 
@@ -108,7 +123,9 @@ BBSWrite DB 구축
 
 전체적인 UI를 개선
 
-6월 12일
+
+### 6월 12일
+
 
 기본적인 메뉴 기능 구현완료
 
@@ -116,7 +133,9 @@ BBSWrite DB 구축
 
 <img src="https://user-images.githubusercontent.com/55871387/85189839-6c2b6d00-b2ed-11ea-846c-56f03cb35e3d.jpg"  width="300" height="600">
 
-6월 20일
+
+### 6월 20일
+
 
 Activity_write 구현완료 - TITLE과 CONTENT라는 EditText 생성, 게시물 작성 완료 버튼인 add_button 생성 
 
@@ -136,7 +155,9 @@ acitivity_information, InformationActivity 구현 완료 (기본만 함)
 
 <img src="https://user-images.githubusercontent.com/55871387/85203406-978f7580-b348-11ea-9f98-00fb1f112b39.jpg"  width="300" height="600">
 
-6월 21일
+
+### 6월 21일
+
 
 activity_information에 textview를 추가해서 이 textview가 어떤 정보인지 알아볼 수 있도록 만듦. (완성본)
 
@@ -153,7 +174,9 @@ JSON 코드를 읽어서 리스트뷰에 뿌리는 함수 구현
 
 ![image](https://user-images.githubusercontent.com/55871387/85227837-b8c09680-b41a-11ea-9569-e632673b66b5.png)
 
-6월 22일
+
+### 6월 22일
+
 
 로그인창에서 뒤로가기 버튼을 두번 눌렀을 때 종료하게끔 구현
 
@@ -190,7 +213,9 @@ post.php 파일을 서버에 추가함.
 
 <img width="960" alt="post php 코드" src="https://user-images.githubusercontent.com/55871387/85419125-a5453500-b5ac-11ea-9c8d-7debda4b09bd.png">
 
-6월 24일
+
+### 6월 24일
+
 
 모든 Activity화면 디자인 수정
 
