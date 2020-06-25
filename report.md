@@ -219,3 +219,10 @@ cpost.php 파일 구현
 <img src="https://user-images.githubusercontent.com/55236612/85514023-8be8cb00-b636-11ea-8f2c-6f54bc667051.png">
 
 댓글 창 관련 CViewActivity, cviewRequest, activity_cview 추가
+
+회원 가입시 아이디 중복확인 버튼 만듦, overlap.php 서버코드 추가
+
+<img src="https://user-images.githubusercontent.com/55871387/85641891-de73c700-b6ca-11ea-9bb2-2559945b631f.jpg" width="300" height="600">
+
+<img width="960" alt="over php구현코드" src="https://user-images.githubusercontent.com/55871387/85641999-18dd6400-b6cb-11ea-9330-f2e2085c9f22.png">
+
