@@ -137,6 +137,13 @@
 
 -메뉴 닫기 버튼 및 메뉴 열기 버튼 추가
 
+-BBSList.php 작성
+-dbconn.php 작성
+
+<img src= "https://user-images.githubusercontent.com/54140431/85733701-5c6db780-b737-11ea-94f1-298ba9e579a4.png">
+
+<img src= "https://user-images.githubusercontent.com/54140431/85733826-7d360d00-b737-11ea-86a5-cb2e8ce07b8e.png">
+
 
 
 ### 6월 10일
