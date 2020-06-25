@@ -102,5 +102,7 @@ DB 설계는
 
 http://kimmessi.dothome.co.kr/myadmin 에서 DB를 구현합니다. 
 
+ftp://kimmessi.dothome.co.kr 에 서버 코드가 있습니다.
+
 사용자는 kimmessi, 비밀번호는 s01020304s! 입니다.
 
