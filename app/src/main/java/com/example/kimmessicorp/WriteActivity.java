@@ -55,8 +55,9 @@ public class WriteActivity extends AppCompatActivity {
                             if (success) {
                                 // 작성 성공
                                 Toast.makeText(getApplicationContext(), "작성되었습니다!", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(WriteActivity.this, MainActivity.class);
-                                startActivity(intent);
+                                MainActivity.Getlistdata getlistdata = new MainActivity.Getlistdata();
+                                getlistdata.execute();
+                                finish();
                             } else {
                                 // 작성 실패
                                 Toast.makeText(getApplicationContext(), "작성이 실패되었습니다.", Toast.LENGTH_SHORT).show();

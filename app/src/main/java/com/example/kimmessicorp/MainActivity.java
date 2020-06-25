@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv_id;
     private DrawerLayout drawerLayout;
     private View drawerView;
-    ArrayAdapter<String> adapter;
+    static ArrayAdapter<String> adapter;
 
     //받아올 data(사용자가 쓴 글)
     List<String> data = new ArrayList<>();
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
         //json 포맷으로 가공된 데이터를 가져오기
-        public class Getlistdata extends AsyncTask<String, Void, String[]> {
+        public static class Getlistdata extends AsyncTask<String, Void, String[]> {
 
             private final String LOG_TAG = Getlistdata.class.getSimpleName();
 
