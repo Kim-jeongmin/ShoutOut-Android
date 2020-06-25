@@ -23,7 +23,9 @@
         <activity android:name=".InformationActivity">
         </activity>
         <activity android:name=".LoginActivity">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity">
             <meta-data
